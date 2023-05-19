@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Hello World JS Meet 3</title>
+        <style>
+            body{font-family: 'Trebuchet MS', sans-serif;
+                margin-left: 10px;}
+        </style>
+    </head>
+
+    <body>
+       <script>
+            for (let counter = 1; counter <= 10; counter++)
+                {document.writeln("<p>Merupakan Perulangan Ke-"+counter+"</p>");}
+
+        document.writeln("</br>")
+
+            let ulang =10
+            while(ulang >=1)
+                {document.writeln("<p>Perulangan Ke-"+ulang+"</p>");
+                ulang--}
+
+        document.writeln("</br>")
+
+            function segitiga1(baris){
+            let pola = ''; for(let i=1; i<=baris; i++){
+                for (let j=1; j<=i; j++){
+                pola += "&#9733 ";}
+                pola += '</br>';}
+                return pola;}
+            document.writeln(segitiga1(5));
+
+        document.writeln("</br>")
+
+            function segitiga2(baris){
+            let pola = ''; for(let i=1; i<=baris; i++){
+                for (let j=baris; j>=i; j--){
+                pola += "&#9733 ";}
+                pola += '</br>';}
+                return pola;}
+            document.writeln(segitiga2(5));
+
+        document.writeln("</br>")
+        
+            function segitiga3(baris){
+            let pola = ''; for(let i=1; i<=baris; i++){
+                for (let j=baris-1; j>=i; j--){
+                pola += "_";}
+                for (let k=1; k<=1; k++){
+                pola += "&#9733 ";}
+                pola += '</br>';}
+                return pola;}
+            document.writeln(segitiga3(5));
+
+        document.writeln("</br>")
+
+            function segitiga4(baris){
+            let pola = ''; for(let i=1; i<=baris; i++){
+                for (let j=baris-1; j>=i; j--){
+                pola += "_";}
+                for (let k=1; k <= i; k++){
+                pola += '&#9733 ';}
+                for (let m=1; m<=i-1; m++){
+                pola += "&#9733 ";}
+                pola += '</br>';}
+                return pola;}
+            document.writeln(segitiga4(5));
+
+       </script> 
+    </body>
+</html>
